@@ -1,0 +1,77 @@
+glassycom.py    common api
+actionapi.py    web opration api  火车订票的 web入口。  
+
+textupdate.py    向redis 中更新 新的 格式化词类。
+rgtitle.py        pscode text  
+
+fexture.py        读取text image 的fexure ，然后加入到redis中； fex_redis_load  ttext_redis_load
+
+imgnormal.py      img 67-67 图片的同一张图片可能性归拢
+                  marco ：  图片大致匹配， 颜色和人工形状
+
+
+--------------- 目录---------
+E:\picdog\onlearn   --- 学习目录
+                  \text     -----  title text 学习title，记录下相关系数小于0.5的记录，用户update textdb。
+                  
+E:\picdog\midp    ---处理过程文件目录，比如分析title产生的中间文件
+
+
+
+------------------------------------------------------------------------------------------------------------------
+python -mpdb  E:\work\bear\baidu.py batch  E:\picdog\pscode  E:\picdog\textdb E:\picdog\bdimagedb 
+
+python  E:\work\bear\baidu.py batch  E:\picdog\pscode  E:\picdog\textdb E:\picdog\bdimagedb 
+从baidu 获取部分图片，E:\work\bear
+
+------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+--------------------------------- Test APi   -------------------
+python -mpdb  E:\work\bear\rgtitle.py  tt E:\picdog\pscode 1475843885.jpg
+测试pscode上部的汉字识别，以本地文件测试， 入参： pscode文件所在目录  具体的文件。
+
+
+
+----------------------- ---------------- step log --------------
+
+11.12  老笔记本usb损坏，同步部分文件。
+       text部分的特征提取，采用python实现，无需matlab ，已经验证 title 流程。
+       
+       
+       
+       
+       
+ 
+image row1 : 40 -  108   
+      col  :  149 - 215     221 -287 
+      
+      row1   113  - 180
+      block3 :  row 41: 108  149:216    block4:  row 41: 108    221:288  
+      block7 :  row 113:180, 149:216 
+
+      text pos :   reg=(118,0,290,28)   start pos is  118 
+      
+ 6-4 /2017  add  
+ 
+
+6-7 
+
+6-8
+  1475846377   texteg  loss more
+
+6-17
+    重构 
+    1.  词组类别编号， 编号的属性包括： 颜色、形状、纹理、undefine
+    2.  按词组下载图片，缩小
+    3.  下载passcode 图片库  
+    4    按下载的图片和文字进行 初定，
+    5.   对passcode 图片，knn 分类，同文件标记
+    6.   
+
+   
+imgmacro.py    
+
+    1466234790_20.jpg    error big
+    1466234799_24.jpg
+
+    

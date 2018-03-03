@@ -23,3 +23,4 @@
 ## 登录
    计算的汉字和图片特征，图片采用多种特征,特征数据加载到redis上;  在线时，识别汉字后，再识别图片。
    整体上汉字识别满意，就是图片识别较差，黑白类背景的图片误判概率大
+ ![](https://github.com/easyzoe/vertify-code/blob/master/image/onlearn.png) 
